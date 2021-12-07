@@ -1,0 +1,31 @@
+scalar Date
+scalar Email
+
+type Query {
+  _: Boolean
+}
+
+type Mutation {
+  _: Boolean
+}
+
+input Pagination {
+  offset: Int
+  limit: Int
+}
+input IdOperator {
+  eq: ID
+  in: [ID!]
+  notIn: [ID!]
+}
+
+
+input StringOperator {
+  eq: String
+  # notEq: String
+  contains: [String]
+  # notContains: String
+  in: [String!]
+  notIn: [String!]
+  regex: String
+}
