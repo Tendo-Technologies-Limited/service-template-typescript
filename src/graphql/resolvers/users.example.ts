@@ -2,9 +2,13 @@ import { IResolvers } from "../../type";
 
 const usersRolver: IResolvers = {
   Query: {
-    users: async (_, __) => {
+    chats: async (_, __) => {
       return [];
     },
+  },
+  Mutation: {
+    registerUser: async (_, __) => {},
+    blockUser: async (_, __) => {},
   },
 };
 
